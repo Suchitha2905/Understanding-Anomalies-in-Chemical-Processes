@@ -1,0 +1,313 @@
+anomalies:
+  - class: ConfirmedAnomaly
+    id: OP017TA001A001
+    hasBeginning: '10:38:33'
+    hasEnd: '10:48:40'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Withdrawal of a sample from the reflux line using a syringe at valve
+      (HV004) (HV004 is temporary installed behind reflux pump (P701))
+    PerturbationMode:
+      label: Leaking out of system (reflux egress)
+      hasBeginning: '10:38:10'
+      hasEnd: '10:40:35'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking out
+          - loss of 8.3 g distillate
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased reflux flow back to the column top
+          id: Observation001_OP017TA001A001
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP017TA001A002
+    hasBeginning: '10:58:01'
+    hasEnd: '11:11:58'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Withdrawal of a sample from the reflux line using a syringe at valve
+      (HV004) (HV004 is temporary installed behind reflux pump (P701))
+    PerturbationMode:
+      label: Leaking out of system (reflux egress)
+      hasBeginning: '10:57:45'
+      hasEnd: '11:02:06'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking out
+          - loss of 8.5 g distillate
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased reflux flow back to the column top
+          id: Observation001_OP017TA001A002
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP017TA001A003
+    hasBeginning: '11:46:30'
+    hasEnd: '11:58:13'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Withdrawal of a sample from the reflux line using a syringe at valve
+      (HV004) (HV004 is temporary installed behind reflux pump (P701))
+    PerturbationMode:
+      label: Leaking out of system (reflux egress)
+      hasBeginning: '11:46:30'
+      hasEnd: '11:50:00'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking out
+          - loss of 31.0 g distillate
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased reflux flow back to the column top
+          id: Observation001_OP017TA001A003
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP017TA001A004
+    hasBeginning: '12:26:44'
+    hasEnd: '12:39:52'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Withdrawal of a sample from the reflux line using a syringe at valve
+      (HV004) (HV004 is temporary installed behind reflux pump (P701))
+    PerturbationMode:
+      label: Leaking out of system (reflux egress)
+      hasBeginning: '12:26:44'
+      hasEnd: '12:34:30'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking out
+          - loss of 39.6 g distillate
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased reflux flow back to the column top
+          id: Observation001_OP017TA001A004
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP017TA001A005
+    hasBeginning:
+    - '10:35:07'
+    - '10:54:40'
+    - '10:57:16'
+    - '11:15:15'
+    - '11:18:20'
+    - '11:36:11'
+    - '11:38:54'
+    - '11:58:24'
+    - '12:15:12'
+    - '12:17:48'
+    - '12:41:39'
+    - '12:44:12'
+    - '13:02:54'
+    - '13:05:28'
+    hasEnd:
+    - '10:35:29'
+    - '10:55:34'
+    - '10:57:49'
+    - '11:15:59'
+    - '11:19:19'
+    - '11:37:18'
+    - '11:39:59'
+    - '11:59:19'
+    - '12:15:55'
+    - '12:18:31'
+    - '12:42:28'
+    - '12:45:04'
+    - '13:03:31'
+    - '13:06:13'
+    hasCategory: recurrent
+    hasRecoveryAction: null
+    Perturbation: Improperly sealed sample valve
+    PerturbationMode:
+      label: Leaking into system (air ingress)
+      hasBeginning: '10:13:12'
+      hasEnd: '13:08:30'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState: leaking in; air ingress
+      hasLocalEffect:
+        LocalEffect:
+          label: Spikes in the mass-flow signal
+          id: Observation001_OP017TA001A005
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP017TA001A005
+    hasBeginning:
+    - '10:13:12'
+    - '10:30:00'
+    - '10:30:39'
+    - '10:31:24'
+    - '10:32:06'
+    - '10:32:48'
+    - '10:33:31'
+    - '10:34:17'
+    - '10:35:07'
+    - '10:36:04'
+    - '10:36:57'
+    - '10:37:57'
+    - '10:48:48'
+    - '10:50:23'
+    - '10:52:20'
+    - '10:53:49'
+    - '10:54:40'
+    - '10:56:42'
+    - '10:57:16'
+    - '11:14:26'
+    - '11:17:02'
+    - '11:20:00'
+    - '11:23:08'
+    - '11:26:34'
+    - '11:29:42'
+    - '11:33:10'
+    - '11:36:11'
+    - '11:38:54'
+    - '11:42:40'
+    - '12:00:46'
+    - '12:04:50'
+    - '12:08:27'
+    - '12:11:42'
+    - '12:15:12'
+    - '12:19:11'
+    - '12:23:05'
+    - '12:26:02'
+    - '12:40:29'
+    - '12:45:10'
+    - '12:49:48'
+    - '12:54:14'
+    - '12:58:56'
+    - '13:03:37'
+    hasEnd:
+    - '10:29:12'
+    - '10:30:19'
+    - '10:30:57'
+    - '10:31:42'
+    - '10:32:27'
+    - '10:33:09'
+    - '10:33:53'
+    - '10:34:41'
+    - '10:35:29'
+    - '10:36:27'
+    - '10:37:20'
+    - '10:38:25'
+    - '10:49:18'
+    - '10:50:50'
+    - '10:52:48'
+    - '10:54:19'
+    - '10:55:34'
+    - '10:57:08'
+    - '10:57:49'
+    - '11:15:00'
+    - '11:17:38'
+    - '10:20:37'
+    - '11:23:47'
+    - '11:27:14'
+    - '11:30:23'
+    - '11:30:50'
+    - '11:37:18'
+    - '11:39:59'
+    - '11:43:23'
+    - '12:01:21'
+    - '12:05:25'
+    - '12:09:02'
+    - '12:12:25'
+    - '12:15:55'
+    - '12:19:40'
+    - '12:23:43'
+    - '12:26:30'
+    - '12:41:00'
+    - '12:45:46'
+    - '12:50:21'
+    - '12:54:50'
+    - '12:59:36'
+    - '13:04:12'
+    hasCategory: recurrent
+    hasRecoveryAction: null
+    Perturbation: Improperly sealed sample valve
+    PerturbationMode:
+      label: Leaking into system (air ingress)
+      hasBeginning: '10:13:12'
+      hasEnd: '13:08:30'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV005
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState: leaking in; air ingress
+      hasLocalEffect:
+        LocalEffect:
+          label: Spikes in the mass-flow signal
+          id: Observation002_OP017TA001A005
+          madeBySensor:
+            Sensor:
+              id: FT703
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Distillate stream
+

@@ -1,0 +1,343 @@
+anomalies:
+  - class: ConfirmedAnomaly
+    id: OP018TA001A001
+    hasBeginning: '11:28:24'
+    hasEnd: '11:36:34'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Injection of nitrogen at 50 NL/h via valve (HV001) at the connection
+      below column section 1 (C001)
+    PerturbationMode:
+      label: Leaking into system (inert gas ingress)
+      hasBeginning: '11:28:00'
+      hasEnd: '11:33:30'
+      happenedAt:
+        System:
+          label: Side-draw valve between reboiler vessel (V001) and column section 1 (C001)
+          id: HV001
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking in
+          - nitrogen ingress at 50 NL/h (normalized to 0 °C, 1.013 bar)
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower fluid temperature in column
+          id: Observation001_OP018TA001A001
+          madeBySensor:
+            Sensor:
+              id: T709
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Column section 1 (C001)
+
+  - class: ConfirmedAnomaly
+    id: OP018TA001A002
+    hasBeginning: '12:05:24'
+    hasEnd: '12:12:32'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Injection of nitrogen at 30 NL/h via valve (HV001) at the connection
+      below column section 1 (C001)
+    PerturbationMode:
+      label: Leaking into system (inert gas ingress)
+      hasBeginning: '12:05:00'
+      hasEnd: '12:09:00'
+      happenedAt:
+        System:
+          label: Side-draw valve between reboiler vessel (V001) and column section 1 (C001)
+          id: HV001
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking in
+          - nitrogen ingress at 30 NL/h (normalized to 0 °C, 1.013 bar)
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower fluid temperature in column
+          id: Observation001_OP018TA001A002
+          madeBySensor:
+            Sensor:
+              id: T709
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Column section 1 (C001)
+
+  - class: ConfirmedAnomaly
+    id: OP018TA001A003
+    hasBeginning: '12:24:00'
+    hasEnd: '12:30:17'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Injection of nitrogen at 30 NL/h via valve (HV001) at the connection
+      below column section 1 (C001)
+    PerturbationMode:
+      label: Leaking into system (inert gas ingress)
+      hasBeginning: '12:24:00'
+      hasEnd: '12:27:00'
+      happenedAt:
+        System:
+          label: Side-draw valve between reboiler vessel (V001) and column section 1 (C001)
+          id: HV001
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking in
+          - nitrogen ingress at 30 NL/h (normalized to 0 °C, 1.013 bar)
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower fluid temperature in column
+          id: Observation001_OP018TA001A003
+          madeBySensor:
+            Sensor:
+              id: T709
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Column section 1 (C001)
+
+  - class: ConfirmedAnomaly
+    id: OP018TA001A004
+    hasBeginning:
+    - '10:36:18'
+    - '10:39:22'
+    - '10:41:58'
+    - '10:44:18'
+    - '10:44:41'
+    - '10:47:13'
+    - '10:49:49'
+    - '10:52:01'
+    - '10:54:23'
+    - '10:57:21'
+    - '11:00:23'
+    - '11:02:41'
+    - '11:05:22'
+    - '11:07:43'
+    - '11:10:33'
+    - '11:12:26'
+    - '11:15:38'
+    - '11:17:55'
+    - '11:20:51'
+    - '11:23:15'
+    - '11:26:00'
+    - '11:28:28'
+    - '11:30:57'
+    - '11:33:34'
+    - '11:36:03'
+    - '11:37:54'
+    - '11:40:37'
+    - '11:43:27'
+    - '11:45:50'
+    - '11:48:20'
+    - '11:50:59'
+    - '11:53:10'
+    - '11:55:48'
+    - '11:57:55'
+    - '12:00:57'
+    - '12:03:14'
+    - '12:11:56'
+    - '12:13:15'
+    - '12:05:49'
+    - '12:08:23'
+    - '12:10:55'
+    - '12:15:46'
+    - '12:18:00'
+    - '12:20:02'
+    - '12:22:35'
+    - '12:24:55'
+    - '12:27:24'
+    - '12:29:42'
+    - '12:31:59'
+    - '12:34:14'
+    - '12:38:37'
+    - '12:40:55'
+    - '12:43:23'
+    - '12:45:33'
+    - '12:47:54'
+    - '12:50:23'
+    - '12:51:25'
+    - '12:54:51'
+    - '12:57:19'
+    - '12:59:42'
+    - '13:02:05'
+    hasEnd:
+    - '10:37:37'
+    - '10:40:05'
+    - '10:42:29'
+    - '10:44:38'
+    - '10:45:21'
+    - '10:48:40'
+    - '10:51:24'
+    - '10:53:50'
+    - '10:56:20'
+    - '10:58:53'
+    - '11:01:35'
+    - '11:03:50'
+    - '11:06:46'
+    - '11:08:48'
+    - '11:11:16'
+    - '11:14:52'
+    - '11:16:27'
+    - '11:19:14'
+    - '11:21:36'
+    - '11:24:30'
+    - '11:26:54'
+    - '11:28:36'
+    - '11:31:14'
+    - '11:33:43'
+    - '11:36:31'
+    - '11:39:35'
+    - '11:41:45'
+    - '11:44:20'
+    - '11:47:27'
+    - '11:49:07'
+    - '11:51:46'
+    - '11:54:11'
+    - '11:56:47'
+    - '11:59:08'
+    - '12:01:59'
+    - '12:04:17'
+    - '12:12:23'
+    - '12:13:50'
+    - '12:06:18'
+    - '12:08:44'
+    - '12:11:23'
+    - '12:16:39'
+    - '12:18:53'
+    - '12:21:05'
+    - '12:23:24'
+    - '12:25:38'
+    - '12:27:47'
+    - '12:30:08'
+    - '12:32:56'
+    - '12:37:32'
+    - '12:39:58'
+    - '12:41:38'
+    - '12:44:04'
+    - '12:46:16'
+    - '12:48:42'
+    - '12:51:17'
+    - '12:53:22'
+    - '12:55:52'
+    - '12:58:13'
+    - '13:00:30'
+    - '13:02:47'
+    hasCategory: recurrent
+    hasRecoveryAction: null
+    Perturbation: Improperly sealed sample valve
+    PerturbationMode:
+      label: Leaking into system (air ingress)
+      hasBeginning: '10:35:09'
+      hasEnd: '13:02:47'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV004
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState: leaking in; air ingress
+      hasLocalEffect:
+        LocalEffect:
+          label: Spikes in the mass-flow signal
+          id: Observation001_OP018TA001A004
+          madeBySensor:
+            Sensor:
+              id: FT704
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Reflux stream
+
+  - class: ConfirmedAnomaly
+    id: OP018TA001A004
+    hasBeginning:
+    - '10:35:33'
+    - '10:36:18'
+    - '10:38:17'
+    - '10:39:22'
+    - '10:40:41'
+    - '10:41:58'
+    - '10:42:46'
+    - '10:44:18'
+    - '10:44:41'
+    - '10:46:05'
+    - '10:47:13'
+    - '10:49:49'
+    - '10:52:01'
+    - '10:54:23'
+    - '10:57:21'
+    - '11:00:23'
+    - '11:04:12'
+    - '11:05:22'
+    - '11:12:26'
+    - '11:17:55'
+    - '11:23:15'
+    - '11:37:54'
+    - '11:45:50'
+    - '11:57:55'
+    - '12:11:56'
+    - '12:24:55'
+    - '12:38:37'
+    - '12:51:25'
+    hasEnd:
+    - '10:35:55'
+    - '10:37:37'
+    - '10:38:39'
+    - '10:40:05'
+    - '10:41:00'
+    - '10:42:29'
+    - '10:43:09'
+    - '10:44:38'
+    - '10:45:21'
+    - '10:46:30'
+    - '10:48:40'
+    - '10:51:24'
+    - '10:53:50'
+    - '10:56:20'
+    - '10:58:53'
+    - '11:01:35'
+    - '11:04:54'
+    - '11:06:46'
+    - '11:14:52'
+    - '11:19:14'
+    - '11:24:30'
+    - '11:39:35'
+    - '11:47:27'
+    - '11:59:08'
+    - '12:12:23'
+    - '12:25:38'
+    - '12:39:58'
+    - '12:51:15'
+    hasCategory: recurrent
+    hasRecoveryAction: null
+    Perturbation: Improperly sealed sample valve
+    PerturbationMode:
+      label: Leaking into system (air ingress)
+      hasBeginning: '10:35:09'
+      hasEnd: '13:02:47'
+      happenedAt:
+        System:
+          label: Manual valve for sample specimen drawing
+          id: HV005
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState: leaking in; air ingress
+      hasLocalEffect:
+        LocalEffect:
+          label: Spikes in the mass-flow signal
+          id: Observation002_OP018TA001A004
+          madeBySensor:
+            Sensor:
+              id: FT703
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Distillate stream
+

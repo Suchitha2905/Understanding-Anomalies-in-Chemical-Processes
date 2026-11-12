@@ -1,0 +1,487 @@
+anomalies:
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Reduced main heat input to reboiler vessel (V001)
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Electric reboiler vessel heater
+          id: H701
+          hasFunction: Main heating of reboiler vessel (V001)
+          hasNormalState:
+          - manual open-loop controlled
+          - heater power 60 % (210 W)
+          hasAnomalousState:
+          - manual open-loop controlled
+          - heater power 45 % (157.5 W)
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower heater (H701) temperature
+          id: Observation001_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: T701
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Heater (H701) at reboiler vessel (V001)
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Reduced heat input to upper section of reboiler vessel (V001)
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Electric reboiler vessel heater
+          id: H702
+          hasFunction: Heating of upper section of reboiler vessel (V001) to prevent wall
+            condensation
+          hasNormalState:
+          - automatic closed-loop controlled
+          - temperature setpoint of T701 + 10 °C
+          - sensor T702
+          hasAnomalousState:
+          - automatic closed-loop controlled
+          - temperature setpoint of T701 + 5 °C
+          - sensor T702
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower heater (H702) temperature
+          id: Observation002_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: T702
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Heater (H702) at reboiler vessel (V001)
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Reduced heat input to column section 2 (C002)
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Electric column heater
+          id: H704
+          hasFunction: Heating of column section 2 (C002) to prevent wall condensation
+          hasNormalState:
+          - automatic closed-loop controlled
+          - temperature setpoint of T701 + 5 °C
+          - sensor T704
+          hasAnomalousState:
+          - automatic closed-loop controlled
+          - temperature setpoint of T701 + 0 °C
+          - sensor T704
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower heater (H704) temperature
+          id: Observation003_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: T704
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Heater (H704) at column section 2 (C002)
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Decreased vacuum line throttling
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Vacuum throttle valve
+          id: TV1
+          hasFunction: Throttling the vacuum line to regulate system pressure
+          hasNormalState:
+          - automatic closed-loop controlled
+          - pressure setpoint 550 mbar
+          - sensor PY23
+          hasAnomalousState:
+          - automatic closed-loop controlled
+          - pressure setpoint 500 mbar
+          - sensor PY23
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased system pressure
+          id: Observation004_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: PY23
+          observedProperty:
+            ObservableProperty: Pressure
+          hasFeatureOfInterest:
+            FeatureOfInterest: Entire plant
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Increased reflux ratio
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Distillate pump
+          id: P702
+          hasFunction: Pump condensed distillate into distillate receiver
+          hasNormalState:
+          - automatic closed-loop controlled
+          - pressure-difference setpoint 2 mbar
+          - sensor PDI702
+          hasAnomalousState:
+          - manual open-loop controlled
+          - pump power 0 %
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased distillate flow to receiver
+          id: Observation005_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: FT703
+          observedProperty:
+            ObservableProperty: Mass flow rate
+          hasFeatureOfInterest:
+            FeatureOfInterest: Distillate stream
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Decreased liquid level in buffer vessel (V002)
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Distillate pump
+          id: P702
+          hasFunction: Pump condensed distillate into distillate receiver
+          hasNormalState:
+          - automatic closed-loop controlled
+          - pressure-difference setpoint 2 mbar
+          - sensor PDI702
+          hasAnomalousState:
+          - automatic closed-loop controlled
+          - pressure-difference setpoint 1 mbar
+          - sensor PDI702
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased pressure difference in buffer vessel (V002)
+          id: Observation006_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: PDI702
+          observedProperty:
+            ObservableProperty: Pressure difference
+          hasFeatureOfInterest:
+            FeatureOfInterest: Buffer vessel (V002)
+
+  - class: ConfirmedAnomaly
+    id: OP029TA001A001
+    hasBeginning: '14:06:24'
+    hasEnd: '14:26:30'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: 'Simultaneously: decrease of heater (H701) power by 15% to 157.5 W;decrease
+      of temperature setpoints (T702,T704) for heaters (H702,H704) by 5 °C; turn off of
+      distillate pump (P702); decrease of  pressure setpoint (PY23) for vacuum pump (P301)
+      by 50 mbar to 500 mbar; decrease of  pressure-difference setpoint (PDI702) for pumps
+      (P701,P702) by 1 mbar to 1 mbar'
+    PerturbationMode:
+      label: Decreased liquid level in buffer vessel (V002)
+      hasBeginning: '14:06:18'
+      hasEnd: '14:17:16'
+      happenedAt:
+        System:
+          label: Reflux pump
+          id: P701
+          hasFunction: Pump condensed distillate from the buffer vessel back to the column
+            top as reflux
+          hasNormalState:
+          - automatic closed-loop controlled
+          - pressure-difference setpoint 2 mbar
+          - sensor PDI702
+          hasAnomalousState:
+          - automatic closed-loop controlled
+          - pressure-difference setpoint 1 mbar
+          - sensor PDI702
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased pressure difference in buffer vessel (V002)
+          id: Observation007_OP029TA001A001
+          madeBySensor:
+            Sensor:
+              id: PDI702
+          observedProperty:
+            ObservableProperty: Pressure difference
+          hasFeatureOfInterest:
+            FeatureOfInterest: Buffer vessel (V002)
+
+  - class: Anomaly
+    id: OP029TA001A002
+    hasBeginning: '15:25:08'
+    hasEnd: '15:30:54'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A002
+        label: Overshooting pressure-control response of vacuum throttle valve (TV1)
+        madeBySensor:
+          Sensor:
+            id: PY23
+        observedProperty:
+          ObservableProperty: Pressure
+        hasFeatureOfInterest:
+          FeatureOfInterest: Entire plant
+
+  - class: Anomaly
+    id: OP029TA001A002
+    hasBeginning: '15:33:44'
+    hasEnd: '15:39:37'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation002_OP029TA001A002
+        label: Overshooting pressure-control response of vacuum throttle valve (TV1)
+        madeBySensor:
+          Sensor:
+            id: PY23
+        observedProperty:
+          ObservableProperty: Pressure
+        hasFeatureOfInterest:
+          FeatureOfInterest: Entire plant
+
+  - class: Anomaly
+    id: OP029TA001A002
+    hasBeginning: '15:40:17'
+    hasEnd: '15:45:45'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation003_OP029TA001A002
+        label: Overshooting pressure-control response of vacuum throttle valve (TV1)
+        madeBySensor:
+          Sensor:
+            id: PY23
+        observedProperty:
+          ObservableProperty: Pressure
+        hasFeatureOfInterest:
+          FeatureOfInterest: Entire plant
+
+  - class: Anomaly
+    id: OP029TA001A002
+    hasBeginning: '15:47:58'
+    hasEnd: '15:52:54'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation004_OP029TA001A002
+        label: Overshooting pressure-control response of vacuum throttle valve (TV1)
+        madeBySensor:
+          Sensor:
+            id: PY23
+        observedProperty:
+          ObservableProperty: Pressure
+        hasFeatureOfInterest:
+          FeatureOfInterest: Entire plant
+
+  - class: Anomaly
+    id: OP029TA001A003
+    hasBeginning: '16:00:48'
+    hasEnd: '16:00:58'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A003
+        label: Overshooting pressure-control response of vacuum throttle valve (TV1)
+        madeBySensor:
+          Sensor:
+            id: PY23
+        observedProperty:
+          ObservableProperty: Pressure
+        hasFeatureOfInterest:
+          FeatureOfInterest: Entire plant
+
+  - class: Anomaly
+    id: OP029TA001A004
+    hasBeginning: '14:06:21'
+    hasEnd: '15:05:00'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A004
+        label: Jumpy heater (H702, H706, H704, H708) power
+        madeBySensor:
+          Sensor:
+            id: T702
+        observedProperty:
+          ObservableProperty: Temperature
+        hasFeatureOfInterest:
+          FeatureOfInterest: Heater (H702) at reboiler vessel (V001)
+
+  - class: Anomaly
+    id: OP029TA001A005
+    hasBeginning: '14:06:21'
+    hasEnd: '15:05:00'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A005
+        label: Jumpy heater (H702, H706, H704, H708) power
+        madeBySensor:
+          Sensor:
+            id: T706
+        observedProperty:
+          ObservableProperty: Temperature
+        hasFeatureOfInterest:
+          FeatureOfInterest: Heater (H706) at column section 1 (C001)
+
+  - class: Anomaly
+    id: OP029TA001A006
+    hasBeginning: '14:06:21'
+    hasEnd: '15:05:00'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A006
+        label: Jumpy heater (H702, H706, H704, H708) power
+        madeBySensor:
+          Sensor:
+            id: T704
+        observedProperty:
+          ObservableProperty: Temperature
+        hasFeatureOfInterest:
+          FeatureOfInterest: Heater (H704) at column section 2 (C002)
+
+  - class: Anomaly
+    id: OP029TA001A007
+    hasBeginning: '14:06:21'
+    hasEnd: '15:05:00'
+    hasCategory: null
+    hasRecoveryAction: null
+    Perturbation: null
+    PerturbationMode:
+      label: null
+      hasBeginning: 00:00:00
+      hasEnd: 00:00:00
+    wasOriginatedBy:
+      Observation:
+        id: Observation001_OP029TA001A007
+        label: Jumpy heater (H702, H706, H704, H708) power
+        madeBySensor:
+          Sensor:
+            id: T708
+        observedProperty:
+          ObservableProperty: Temperature
+        hasFeatureOfInterest:
+          FeatureOfInterest: Heater (H708) at column section 3 (C003)
+

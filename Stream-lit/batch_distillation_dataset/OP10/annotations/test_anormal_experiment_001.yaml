@@ -1,0 +1,35 @@
+anomalies:
+  - class: ConfirmedAnomaly
+    id: OP010TA001A001
+    hasBeginning: '16:20:44'
+    hasEnd: '16:37:56'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Injection of nitrogen at 5 NL/h via valve (HV009) at reboiler vessel
+      (V001)
+    PerturbationMode:
+      label: Leaking into system (inert gas ingress)
+      hasBeginning: '16:20:00'
+      hasEnd: '16:37:00'
+      happenedAt:
+        System:
+          label: Manual valve at reboiler vessel (V001)
+          id: HV009
+          hasFunction: Allow controlled sampling without venting or external leakage (normally
+            closed/sealed)
+          hasNormalState: sealed
+          hasAnomalousState:
+          - leaking in
+          - nitrogen ingress at 5 NL/h (normalized to 0 °C, 1.013 bar)
+      hasLocalEffect:
+        LocalEffect:
+          label: Lower fluid temperature in column
+          id: Observation001_OP010TA001A001
+          madeBySensor:
+            Sensor:
+              id: T712
+          observedProperty:
+            ObservableProperty: Temperature
+          hasFeatureOfInterest:
+            FeatureOfInterest: Column section 2 (C002)
+

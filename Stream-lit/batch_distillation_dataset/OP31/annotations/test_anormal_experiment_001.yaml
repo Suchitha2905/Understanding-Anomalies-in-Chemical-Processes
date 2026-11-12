@@ -1,0 +1,65 @@
+anomalies:
+  - class: ConfirmedAnomaly
+    id: OP031TA001A001
+    hasBeginning: '10:23:44'
+    hasEnd: '10:34:14'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Turn off of thermostat (TCU1) to reduce cooling water supply for condenser
+      (HE001, HE002)
+    PerturbationMode:
+      label: Reduced cooling capacity of condenser (HE001,HE002)
+      hasBeginning: '10:23:45'
+      hasEnd: '10:29:45'
+      happenedAt:
+        System:
+          label: Circulating thermostat for condenser (HE001,HE002)
+          id: TCU1
+          hasFunction: Pumping of temperature-controlled fluid (cooling/heating) through
+            the loop
+          hasNormalState: turned on
+          hasAnomalousState: turned off
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased cooling water flow
+          id: Observation001_OP031TA001A001
+          madeBySensor:
+            Sensor:
+              id: FYI702
+          observedProperty:
+            ObservableProperty: Flux
+          hasFeatureOfInterest:
+            FeatureOfInterest: Cooling water stream
+
+  - class: ConfirmedAnomaly
+    id: OP031TA001A002
+    hasBeginning: '11:12:01'
+    hasEnd: '11:29:10'
+    hasCategory: transient
+    hasRecoveryAction: Restore normal state
+    Perturbation: Turn off of thermostat (TCU1) to reduce cooling water supply for condenser
+      (HE001, HE002)
+    PerturbationMode:
+      label: Reduced cooling capacity of condenser (HE001,HE002)
+      hasBeginning: '11:12:00'
+      hasEnd: '11:22:00'
+      happenedAt:
+        System:
+          label: Circulating thermostat for condenser (HE001,HE002)
+          id: TCU1
+          hasFunction: Pumping of temperature-controlled fluid (cooling/heating) through
+            the loop
+          hasNormalState: turned on
+          hasAnomalousState: turned off
+      hasLocalEffect:
+        LocalEffect:
+          label: Decreased cooling water flow
+          id: Observation001_OP031TA001A002
+          madeBySensor:
+            Sensor:
+              id: FYI702
+          observedProperty:
+            ObservableProperty: Flux
+          hasFeatureOfInterest:
+            FeatureOfInterest: Cooling water stream
+
